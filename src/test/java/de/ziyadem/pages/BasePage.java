@@ -18,4 +18,6 @@ public abstract class BasePage {
 
     @FindBy(xpath = "(//i[@class='icon-user'])[2]")
     public WebElement myAccountLink;
+
+
 }
