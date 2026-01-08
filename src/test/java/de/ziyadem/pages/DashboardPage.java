@@ -12,4 +12,9 @@ public class DashboardPage extends BasePage {
 
     @FindBy(xpath = "(//font[text()='Olivensorten'])[1]")
     public WebElement olivensorten;
+    @FindBy(xpath = "(//font[normalize-space(text())='Dashboard'])[1]")
+    public WebElement dashboardLink;
+
+    @FindBy (xpath = "(//a[@title='Warenkorb'])[1]")
+    public WebElement cartButton;
 }
