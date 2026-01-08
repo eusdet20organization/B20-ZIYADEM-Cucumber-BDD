@@ -6,4 +6,10 @@ import org.openqa.selenium.support.FindBy;
 public class DashboardPage extends BasePage {
     @FindBy(className = "woocommerce-MyAccount-content")
     public WebElement accountContent;
+
+    @FindBy(xpath = "(//font[text()='Delikatessen'])[1]")
+    public WebElement delicatessenLink;
+
+    @FindBy(xpath = "(//font[text()='Olivensorten'])[1]")
+    public WebElement olivensorten;
 }
