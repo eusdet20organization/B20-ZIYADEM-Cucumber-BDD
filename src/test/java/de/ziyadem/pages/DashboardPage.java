@@ -18,6 +18,10 @@ public class DashboardPage extends BasePage {
     @FindBy (xpath = "(//a[@title='Warenkorb'])[1]")
     public WebElement cartButton;
 
+    @FindBy (xpath = "(//i[@class='icon-instagram'])[1]")
+    public WebElement instagramIcon;
+
+
     @FindBy(xpath = "(//font[text()='Delikatessen'])[1]")
     public WebElement delicatessenLink;
 
