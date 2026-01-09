@@ -7,6 +7,11 @@ public class DashboardPage extends BasePage {
     @FindBy(className = "woocommerce-MyAccount-content")
     public WebElement accountContent;
 
+    @FindBy(xpath = "(//font[text()='Delikatessen'])[1]")
+    public WebElement delicatessenLink;
+
+    @FindBy(xpath = "(//font[text()='Olivensorten'])[1]")
+    public WebElement olivensorten;
     @FindBy(xpath = "(//font[normalize-space(text())='Dashboard'])[1]")
     public WebElement dashboardLink;
 
@@ -17,4 +22,9 @@ public class DashboardPage extends BasePage {
     public WebElement instagramIcon;
 
 
+    @FindBy(xpath = "(//font[text()='Delikatessen'])[1]")
+    public WebElement delicatessenLink;
+
+    @FindBy(xpath = "(//font[text()='Olivensorten'])[1]")
+    public WebElement olivensorten;
 }
