@@ -18,6 +18,9 @@ public class LoginPage extends BasePage{
     @FindBy(css = "[name='login']")
     public WebElement loginBtn;
 
+    @FindBy(xpath = "(//font[text()='Anmelden'])[2]")
+    public WebElement loginButton;
+
 
 
     public void login(String email, String pwd) {

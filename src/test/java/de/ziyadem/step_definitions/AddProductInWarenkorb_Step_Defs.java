@@ -24,17 +24,6 @@ public class AddProductInWarenkorb_Step_Defs {
         dashboardPage.olivensorten.click();
 
     }
-    @When("click on the fourth Prodact")
-    public void click_on_the_prodact() {
-        BrowserUtils.clickWithJS(olivensortenPage.cocktailOlivenLink);
-
-    }
-    @When("uaer clicks on the In Warenkorb Button")
-    public void uaer_clicks_on_the_in_warenkorb_button() {
-        prodactPage.inDenWarenkorbButton.click();
-
-
-    }
     @When("user clicks on the Warenkorb Icon")
     public void user_clicks_on_the_warenkorb_icon() {
         prodactPage.warenkorbIcon.click();

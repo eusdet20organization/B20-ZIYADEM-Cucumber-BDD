@@ -21,10 +21,9 @@ public class DashboardPage extends BasePage {
     @FindBy (xpath = "(//i[@class='icon-instagram'])[1]")
     public WebElement instagramIcon;
 
+    @FindBy (xpath = "(//a[@title='Mein Konto'])[2]")
+    public WebElement meinKontoIcon;
 
-    @FindBy(xpath = "(//font[text()='Delikatessen'])[1]")
-    public WebElement delicatessenLink;
-
-    @FindBy(xpath = "(//font[text()='Olivensorten'])[1]")
-    public WebElement olivensorten;
+    @FindBy (xpath = "//font[text()='melde']")
+    public WebElement meldeButton;
 }
