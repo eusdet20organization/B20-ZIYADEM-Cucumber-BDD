@@ -31,7 +31,12 @@ public class DashboardPage extends BasePage {
     public WebElement instagramIcon;
 
 
-    @FindBy
+
+    @FindBy (xpath = "(//a[@class='nav-top-link'])[6]")
+    public WebElement oilsCategory;
+
+
+
 
 
 
