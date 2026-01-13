@@ -34,13 +34,14 @@ public class DashboardPage extends BasePage {
 
     @FindBy (xpath = "(//a[@class='nav-top-link'])[6]")
     public WebElement oilsCategory;
+    @FindBy (xpath = "//font[text()='melde']")
+    public WebElement meldeButton;
 
+    @FindBy (xpath = "//font[text()='Abmelden']")
+    public WebElement abmeldenText;
 
-
-
-
-
-
-
+    public void goBackBrowserButton() {
+        Driver.getDriver().navigate().back();
+    }
 
 }
