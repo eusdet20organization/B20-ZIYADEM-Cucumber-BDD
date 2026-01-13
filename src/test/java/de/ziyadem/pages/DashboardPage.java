@@ -22,7 +22,7 @@ public class DashboardPage extends BasePage {
     @FindBy (xpath = "(//a[@class='account-link account-login icon primary button round is-small'])[1]")
     public WebElement profilButton;
 
-    @FindBy (xpath = "(//a[@class='woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-account'])[1]")
+    @FindBy (xpath = "(//li[@class='woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-account'])[2]")
     public WebElement accountdetails;
 
 
