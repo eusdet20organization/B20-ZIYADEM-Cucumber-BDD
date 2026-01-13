@@ -37,4 +37,19 @@ public class Logout_Step_Defs {
 
     }
 
+    @When("user klick auf Zurück Schaltfläche des Browser")
+    public void user_klick_auf_zurück_schaltfläche_des_browser() {
+        dashboardPage.goBackBrowserButton();
+        BrowserUtils.sleep(2);
+
+
+    }
+    @Then("verify that the user is still logged in")
+    public void verify_that_the_user_is_still_logged_in() {
+        BrowserUtils.hover(dashboardPage.meinKontoIcon);
+        Assert.assertEquals("Wunschliste".toLowerCase(),
+                dashboardPage.wishListLink.getText().toLowerCase());
+
+    }
+
 }
