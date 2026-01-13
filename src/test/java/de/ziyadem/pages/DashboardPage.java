@@ -18,11 +18,21 @@ public class DashboardPage extends BasePage {
     @FindBy (xpath = "(//a[@title='Warenkorb'])[1]")
     public WebElement cartButton;
 
+
+    @FindBy (xpath = "(//a[@class='account-link account-login icon primary button round is-small'])[1]")
+    public WebElement profilButton;
+
+    @FindBy (xpath = "(//li[@class='woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-account'])[2]")
+    public WebElement accountdetails;
+
     @FindBy (xpath = "(//i[@class='icon-instagram'])[1]")
     public WebElement instagramIcon;
 
     @FindBy (xpath = "(//a[@title='Mein Konto'])[2]")
     public WebElement meinKontoIcon;
+
+    @FindBy (xpath = "(//a[@class='nav-top-link'])")
+    public WebElement oilsCategory;
 
     @FindBy (xpath = "//font[text()='melde']")
     public WebElement meldeButton;
