@@ -1,5 +1,6 @@
 package de.ziyadem.pages;
 
+import de.ziyadem.utils.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -22,9 +23,14 @@ public class DashboardPage extends BasePage {
     public WebElement instagramIcon;
 
 
-    @FindBy(xpath = "(//font[text()='Delikatessen'])[1]")
-    public WebElement delicatessenLink;
+    @FindBy (xpath = "//font[text()='melde']")
+    public WebElement meldeButton;
 
-    @FindBy(xpath = "(//font[text()='Olivensorten'])[1]")
-    public WebElement olivensorten;
+    @FindBy (xpath = "//font[text()='Abmelden']")
+    public WebElement abmeldenText;
+
+    public void goBackBrowserButton() {
+        Driver.getDriver().navigate().back();
+    }
+
 }
