@@ -7,19 +7,11 @@ import de.ziyadem.pages.LoginPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-
-
-
-
-
 public class PasswortÄndern_Step_Defs {
-
     DashboardPage dashboardPage = new DashboardPage();
     LoginPage loginPage = new LoginPage();
 
     AccauntDetailsPage accountDetailsPage = new AccauntDetailsPage();
-
-
     @When("user clicks on the Profil icon")
     public void user_clicks_on_the_profil_icon() {
         dashboardPage.profilButton.click();
