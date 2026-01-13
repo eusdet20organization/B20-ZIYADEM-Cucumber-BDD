@@ -1,5 +1,5 @@
 Feature: Passwortänderung
-@wip
+@vad
   Scenario: user changes password
     Given user logs in with email "vadimdok1@gmail.com" and password "NewPassw0rd!23"
     When user clicks on the Profil icon
