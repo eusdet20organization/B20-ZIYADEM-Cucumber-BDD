@@ -18,12 +18,7 @@ public class MengeInwarenkorbErhöhen_Step_Defs {
     WarenkorbPage warenkorbPage = new WarenkorbPage();
 
 
-    @When("hoveringr over auf Delikatessen und click on the Olivensorten")
-    public void hoveringr_over_auf_delikatessen_und_click_on_the_olivensorten() {
-        BrowserUtils.hover(dashboardPage.delicatessenLink);
-        dashboardPage.olivensorten.click();
 
-    }
     @When("click on the fourth Prodact")
     public void click_on_the_fourth_prodact() {
         BrowserUtils.clickWithJS(olivensortenPage.cocktailOlivenLink);
@@ -34,10 +29,7 @@ public class MengeInwarenkorbErhöhen_Step_Defs {
         prodactPage.inDenWarenkorbButton.click();
 
     }
-    @When("user clicks on the Warenkorb Icon")
-    public void user_clicks_on_the_warenkorb_icon() {
-        prodactPage.warenkorbIcon.click();
-    }
+
     @When("user increases the quantity on two")
     public void user_increases_the_quantity_to() {
         warenkorbPage.increaseQuantityButton.click();
