@@ -36,8 +36,6 @@ public class DashboardPage extends BasePage {
     public WebElement oilsCategory;
 
 
-    @FindBy (xpath = "(//a[@class='nav-top-link'])[6]")
-    public WebElement oilsCategory;
     @FindBy (xpath = "//font[text()='melde']")
     public WebElement meldeButton;
 
