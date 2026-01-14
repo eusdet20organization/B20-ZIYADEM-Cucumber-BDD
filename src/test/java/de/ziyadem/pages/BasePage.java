@@ -21,6 +21,10 @@ public abstract class BasePage {
 
     @FindBy(xpath = "//a[@class='register']")
     public WebElement registerLink;
+    @FindBy(xpath = "//font[text()='Wunschliste']")
+    public WebElement wishListLink;
+
+
 
 
 }
