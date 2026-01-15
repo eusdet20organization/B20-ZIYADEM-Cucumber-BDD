@@ -41,4 +41,9 @@ public class Suchleiste_Step_Defs {
                 bioProduktPage.ersteBewertung.getText().toLowerCase());
 
     }
+    @Then("Verifiziert dass die Meldung Produkt nicht gefunden angezeigt wird")
+    public void verifiziert_dass_die_meldung_produkt_nicht_gefunden_angezeigt_wird() {
+        Assert.assertEquals("Keine Produkte gefunden.".toLowerCase(),
+                homePage.keineProdukteGefundenText.getText().toLowerCase());
+    }
 }
