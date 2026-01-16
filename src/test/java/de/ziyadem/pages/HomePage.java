@@ -10,4 +10,7 @@ public class HomePage extends BasePage {
 
     @FindBy(xpath = "//font[text()='Keine Produkte gefunden.']")
     public WebElement keineProdukteGefundenText;
+
+    @FindBy(xpath = "//font[text()='Bingöl Bio-Honigwabe']")
+    public WebElement honigProdukt;
 }
