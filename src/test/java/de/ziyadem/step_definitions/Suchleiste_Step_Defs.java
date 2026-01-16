@@ -46,4 +46,10 @@ public class Suchleiste_Step_Defs {
         Assert.assertEquals("Keine Produkte gefunden.".toLowerCase(),
                 homePage.keineProdukteGefundenText.getText().toLowerCase());
     }
+
+    @Then("Verifiziert dass die Suchergebnisse in der Dropdown-Liste angezeigt sind")
+    public void verifiziert_dass_die_suchergebnisse_in_der_dropdown_liste_angezeigt_sind() {
+        Assert.assertEquals("Bingöl Bio-Honigwabe".toLowerCase(),
+                homePage.honigProdukt.getText().toLowerCase());
+    }
 }

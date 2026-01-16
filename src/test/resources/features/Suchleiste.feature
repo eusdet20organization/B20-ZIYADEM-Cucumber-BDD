@@ -12,3 +12,9 @@ Feature: Suchleiste funktionality
       When user klick auf Such Feld
       And user schreibt "Saft" in Such Feld
       Then Verifiziert dass die Meldung Produkt nicht gefunden angezeigt wird
+
+  Scenario: Suchergebnisse sind in Dropdown-Liste angezeigt
+    Given user logs in with email "blagojaan@yahoo.com" and password "Test12345678@"
+    When user klick auf Such Feld
+    And user schreibt "Honig" in Such Feld
+    Then Verifiziert dass die Suchergebnisse in der Dropdown-Liste angezeigt sind
