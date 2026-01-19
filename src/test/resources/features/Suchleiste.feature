@@ -17,4 +17,10 @@ Feature: Suchleiste funktionality
     Given user logs in with email "blagojaan@yahoo.com" and password "Test12345678@"
     When user klick auf Such Feld
     And user schreibt "Honig" in Such Feld
-    Then Verifiziert dass die Suchergebnisse in der Dropdown-Liste angezeigt sind
+    Then Verifiziert dass die Suchergebnisse in der Dropdown-Liste angezeigt
+
+    Scenario: Nach Enter drücken der Benutzer ist auf Webseite von Produkt
+      Given user logs in with email "blagojaan@yahoo.com" and password "Test12345678@"
+      When user klick auf Such Feld
+      And user schreibt "BIO" in Such Feld
+      Then Verifiziert dass der Benutzer auf Produkt Webseite gelandet ist
