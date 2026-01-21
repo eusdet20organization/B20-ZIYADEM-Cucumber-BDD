@@ -46,4 +46,14 @@ public class DashboardPage extends BasePage {
         Driver.getDriver().navigate().back();
     }
 
+
+    @FindBy (xpath = "(//a[@href='#'])[13]")
+    public WebElement languageIcon;
+
+    @FindBy (xpath = "(//a[@href='#'])[4]")
+    public WebElement languageNederlandsIcon;
+
+    @FindBy (xpath = "(//a[@class='nav-top-link'])[1]")
+    public WebElement soortenHoningIcon;
+
 }
