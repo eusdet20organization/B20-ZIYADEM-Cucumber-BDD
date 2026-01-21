@@ -1,8 +1,7 @@
 package de.ziyadem.step_definitions;
 
-import de.ziyadem.pages.DashboardPage;
-import de.ziyadem.pages.DelikatessenPage;
-import de.ziyadem.pages.LoginPage;
+import de.ziyadem.pages.*;
+import de.ziyadem.utils.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -15,6 +14,10 @@ public class Navigationleiste_Step_Defs {
 
     DelikatessenPage delikatessenPage = new DelikatessenPage();
 
+    HomePage homePage = new HomePage();
+
+    TherapeutischeProduktePage therapeutischeProduktePage = new TherapeutischeProduktePage();
+
     @When("user klick auf Delikatessen Seite")
     public void user_klick_auf_delikatessen_seite() {
         dashboardPage.delicatessenLink.click();
@@ -26,4 +29,18 @@ public class Navigationleiste_Step_Defs {
                 delikatessenPage.besondereGeschmacksrichtungenHeader.getText().toLowerCase());
 
     }
+
+    @When("klick auf Therapeutische Produkte der Bienengruppe von Kategorie Honigsorten")
+    public void klick_auf_therapeutische_produkte_der_bienengruppe_von_kategorie_honigsorten() {
+        BrowserUtils.hover(homePage.honigsortenLink);
+        homePage.therapeutischeProdukteDerBienengruppe.click();
+
+    }
+    @Then("Verifiziert dass Therapeutische Produkte der Bienengruppe angezeigt sind")
+    public void verifiziert_dass_therapeutische_produkte_der_bienengruppe_angezeigt_sind() {
+        Assert.assertEquals("Bienenbrot 100 g".toLowerCase(),
+                therapeutischeProduktePage.bienenbrot100gProdukt.getText().toLowerCase());
+
+    }
+
 }
