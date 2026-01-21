@@ -20,6 +20,13 @@ public class HomePage extends BasePage {
     public void Enterdrücken() {
         firstSuchVorschlag.sendKeys(Keys.ENTER);
     }
+
+    @FindBy(xpath = "(//font[text()='Honigsorten'])[1]")
+    public WebElement honigsortenLink;
+
+    @FindBy(xpath = "(//font[text()='Therapeutische Produkte der Bienengruppe'])[1]")
+    public WebElement therapeutischeProdukteDerBienengruppe;
+
 }
 
 
