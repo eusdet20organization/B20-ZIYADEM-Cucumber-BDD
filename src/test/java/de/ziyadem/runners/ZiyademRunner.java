@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "de/ziyadem/step_definitions",
         dryRun = false,
-        tags = "@sdm",
+        tags = "",
         publish = false
 )
 public class ZiyademRunner {

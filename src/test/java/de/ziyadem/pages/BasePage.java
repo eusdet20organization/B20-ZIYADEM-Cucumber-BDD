@@ -1,6 +1,7 @@
 package de.ziyadem.pages;
 
 import de.ziyadem.utils.Driver;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -27,11 +28,8 @@ public abstract class BasePage {
     @FindBy(css="#woocommerce-product-search-field-0")
     public WebElement suchFeld;
 
-    @FindBy(xpath = "//a[text()='Unternehmensinformationen']")
-    public WebElement unternehmensinformationenButton;
-
-    @FindBy(xpath = "//a[contains(@href,'/agb')]")
-    public WebElement nutzungsbedingungenButton;
+    @FindBy(xpath = "(//i[@class='icon-search'])[1]")
+    public WebElement suchButton;
 
     @FindBy(xpath = "//a[contains(@href,'/datenschutz')]")
     public WebElement datenschutzrichtlinieButton;
