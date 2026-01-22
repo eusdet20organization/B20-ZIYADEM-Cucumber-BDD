@@ -18,6 +18,8 @@ public class Navigationleiste_Step_Defs {
 
     TherapeutischeProduktePage therapeutischeProduktePage = new TherapeutischeProduktePage();
 
+    NussePage nussePage = new NussePage();
+
     @When("user klick auf Delikatessen Seite")
     public void user_klick_auf_delikatessen_seite() {
         dashboardPage.delicatessenLink.click();
@@ -40,6 +42,19 @@ public class Navigationleiste_Step_Defs {
     public void verifiziert_dass_therapeutische_produkte_der_bienengruppe_angezeigt_sind() {
         Assert.assertEquals("Bienenbrot 100 g".toLowerCase(),
                 therapeutischeProduktePage.bienenbrot100gProdukt.getText().toLowerCase());
+
+    }
+
+    @When("user klickt auf Nüsse")
+    public void user_klickt_auf_nüsse() {
+        homePage.nusseLink.click();
+
+    }
+    @Then("Verifiziert dass Nüsse Produkte angezeigt sind")
+    public void verifiziert_dass_nüsse_produkte_angezeigt_sind() {
+
+        Assert.assertEquals("Haselnüsse in der Schale".toLowerCase(),
+                nussePage.haselnusseInDerSchaleProdukt.getText().toLowerCase());
 
     }
 
