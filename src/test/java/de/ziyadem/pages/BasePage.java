@@ -24,7 +24,28 @@ public abstract class BasePage {
     @FindBy(xpath = "//font[text()='Wunschliste']")
     public WebElement wishListLink;
 
+    @FindBy(css="#woocommerce-product-search-field-0")
+    public WebElement suchFeld;
 
+    @FindBy(xpath = "//a[text()='Unternehmensinformationen']")
+    public WebElement unternehmensinformationenButton;
 
+    @FindBy(xpath = "//a[contains(@href,'/agb')]")
+    public WebElement nutzungsbedingungenButton;
+
+    @FindBy(xpath = "//a[contains(@href,'/datenschutz')]")
+    public WebElement datenschutzrichtlinieButton;
+
+    @FindBy(xpath = "//a[contains(@href,'/versand-und-ruckgabeinformationen')]")
+    public WebElement versandUndRuckgabeinformationenButton;
+
+    @FindBy(xpath = "//a[contains(@href,'/stornierung-und-ruckerstattung')]")
+    public WebElement stornierungUndRuckerstattungButton;
+
+    @FindBy(xpath = "//a[contains(@href,'/kommunikation')]")
+    public WebElement kommunikationButton;
+
+    @FindBy(xpath = "(//i[@class='icon-search'])[1]")
+    public WebElement suchButton;
 
 }
