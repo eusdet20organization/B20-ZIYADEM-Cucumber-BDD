@@ -1,8 +1,11 @@
 package de.ziyadem.pages;
 
 import de.ziyadem.utils.Driver;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DashboardPage extends BasePage {
     @FindBy(className = "woocommerce-MyAccount-content")

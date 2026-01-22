@@ -31,4 +31,19 @@ public abstract class BasePage {
     @FindBy(xpath = "(//i[@class='icon-search'])[1]")
     public WebElement suchButton;
 
+    @FindBy(xpath = "//a[contains(@href,'/datenschutz')]")
+    public WebElement datenschutzrichtlinieButton;
+
+    @FindBy(xpath = "//a[contains(@href,'/versand-und-ruckgabeinformationen')]")
+    public WebElement versandUndRuckgabeinformationenButton;
+
+    @FindBy(xpath = "//a[contains(@href,'/stornierung-und-ruckerstattung')]")
+    public WebElement stornierungUndRuckerstattungButton;
+
+    @FindBy(xpath = "//a[contains(@href,'/kommunikation')]")
+    public WebElement kommunikationButton;
+
+    @FindBy(xpath = "(//i[@class='icon-search'])[1]")
+    public WebElement suchButton;
+
 }
