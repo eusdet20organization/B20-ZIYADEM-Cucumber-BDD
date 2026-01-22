@@ -27,6 +27,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "(//font[text()='Therapeutische Produkte der Bienengruppe'])[1]")
     public WebElement therapeutischeProdukteDerBienengruppe;
 
+    @FindBy(xpath = "//font[text()='Nüsse']")
+    public WebElement nusseLink;
+
 }
 
 
