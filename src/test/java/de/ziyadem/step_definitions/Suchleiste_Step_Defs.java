@@ -8,7 +8,10 @@ import de.ziyadem.utils.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class Suchleiste_Step_Defs {
 
@@ -26,7 +29,7 @@ public class Suchleiste_Step_Defs {
     }
     @When("user schreibt {string} in Such Feld")
     public void user_schreibt_in_such_feld(String string) {
-        loginPage.suchFeld.sendKeys(string);
+        loginPage.suchFeld.sendKeys(string + Keys.ENTER);
 
     }
     @When("user klick auf erste Option")
@@ -52,4 +55,13 @@ public class Suchleiste_Step_Defs {
         Assert.assertEquals("Bingöl Bio-Honigwabe".toLowerCase(),
                 homePage.honigProdukt.getText().toLowerCase());
     }
+
+    @Then("Verifiziert dass der Benutzer auf Produkt Webseite gelandet ist")
+    public void verifiziert_dass_der_benutzer_auf_produkt_webseite_gelandet_ist() {
+
+        Assert.assertEquals("Propolis-Tropfen 20 ml".toLowerCase(),
+                bioProduktPage.propolisProdukt.getText().toLowerCase());
+
+    }
+
 }

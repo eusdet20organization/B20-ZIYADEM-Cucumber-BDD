@@ -1,8 +1,11 @@
 package de.ziyadem.pages;
 
 import de.ziyadem.utils.Driver;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DashboardPage extends BasePage {
     @FindBy(className = "woocommerce-MyAccount-content")
@@ -51,5 +54,15 @@ public class DashboardPage extends BasePage {
 
 
     }
+
+
+    @FindBy (xpath = "(//a[@href='#'])[13]")
+    public WebElement languageIcon;
+
+    @FindBy (xpath = "(//a[@href='#'])[4]")
+    public WebElement languageNederlandsIcon;
+
+    @FindBy (xpath = "(//a[@class='nav-top-link'])[1]")
+    public WebElement soortenHoningIcon;
 
 }

@@ -1,5 +1,4 @@
 Feature: Wishlist Icon is clickable
-  @vad
   Scenario: user can add product to Wishlist
     Given user logs in with email "vadimdok1@gmail.com" and password "NewPassw0rd!23"
     When user selects the category Oils

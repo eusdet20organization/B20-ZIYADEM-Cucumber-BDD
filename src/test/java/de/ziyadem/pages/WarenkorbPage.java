@@ -21,4 +21,7 @@ public class WarenkorbPage extends BasePage {
 
     @FindBy(xpath = "//font[text()='×']")
     public WebElement removeItemButton;
+
+    @FindBy(xpath = "//input[@value='1']")
+    public WebElement quantityInputBox;
 }
