@@ -4,8 +4,14 @@ import de.ziyadem.utils.BrowserUtils;
 import de.ziyadem.utils.ConfigReader;
 import de.ziyadem.utils.Driver;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class LoginPage extends BasePage{
 
@@ -21,6 +27,10 @@ public class LoginPage extends BasePage{
     @FindBy(xpath = "(//font[text()='Anmelden'])[2]")
     public WebElement loginButton;
 
+    @FindBy(xpath = "//font[contains(text(),'erforderlich')]")
+    public WebElement userNameError;
+
+
 
 
     public void login(String email, String pwd) {
@@ -31,7 +41,16 @@ public class LoginPage extends BasePage{
         loginBtn.click();
         //BrowserUtils.hover(myAccountLink);
         //Assert.assertTrue(dashboardLink.isDisplayed());
+
     }
 
 
+
+    public String getUserNameErrorText() {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+
+        wait.until(ExpectedConditions.visibilityOf(userNameError));
+        return userNameError.getText();
+
+    }
 }
