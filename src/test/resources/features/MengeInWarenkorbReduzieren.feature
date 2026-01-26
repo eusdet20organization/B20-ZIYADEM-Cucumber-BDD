@@ -1,5 +1,5 @@
 Feature: Menge Reduzieren
-
+  
   Scenario: user reduziert die Menge im Warenkorb
     Given user logs in with email "blagojaan@yahoo.com" and password "Test12345678@"
     When hoveringr over auf Delikatessen und click on the Olivensorten
