@@ -11,5 +11,11 @@ public class ProdactPage extends BasePage {
     @FindBy (xpath = "(//a[@title='Warenkorb'])[1]")
     public WebElement warenkorbIcon;
 
+    @FindBy (xpath = "(//font[text()='Produktinhalt: 600 '])[1]")
+    public WebElement produktInhalt600;
+
+    @FindBy (xpath = "(//font[text()='×'])[2]")
+    public WebElement closePopupButton;
+
 
 }
