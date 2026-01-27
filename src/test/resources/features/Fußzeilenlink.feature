@@ -1,5 +1,5 @@
 Feature: Fußzeilenlink
-@sdm
+
   Scenario: der Benutzer loggt sich ein
 
   Given user logs in with email "cankirili_18@hotmail.de" and password "Eurotech.Test123"

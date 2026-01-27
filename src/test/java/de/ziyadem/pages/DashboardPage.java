@@ -35,7 +35,7 @@ public class DashboardPage extends BasePage {
     @FindBy (xpath = "(//a[@title='Mein Konto'])[2]")
     public WebElement meinKontoIcon;
 
-    @FindBy (xpath = "(//a[@class='nav-top-link'])")
+    @FindBy (xpath = "(//a[@class='nav-top-link'])[6]")
     public WebElement oilsCategory;
 
 
