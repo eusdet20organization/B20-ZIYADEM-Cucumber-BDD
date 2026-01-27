@@ -43,7 +43,6 @@ public abstract class BasePage {
     @FindBy(xpath = "//a[contains(@href,'/kommunikation')]")
     public WebElement kommunikationButton;
 
-    @FindBy(xpath = "(//i[@class='icon-search'])[1]")
-    public WebElement suchButton;
+
 
 }
