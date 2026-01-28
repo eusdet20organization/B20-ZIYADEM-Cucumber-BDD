@@ -7,4 +7,12 @@ public class MeineKontoPage extends BasePage {
 
     @FindBy(xpath = "//font[text()='Bestätigen und abmelden']")
     public WebElement AbmeldenButton;
+
+    @FindBy(xpath = "//div[@id='wrapper']")
+    public WebElement meineKontoPageTitle;
+
+
+
+
+
 }

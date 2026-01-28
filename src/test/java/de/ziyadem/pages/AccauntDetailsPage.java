@@ -20,9 +20,17 @@ public class AccauntDetailsPage extends BasePage{
     @FindBy (xpath = "//div[@class='message-container container success-color medium-text-center']")
     public WebElement passwordChangeConfirmation;
 
+    @FindBy(xpath = "//font[text()='Kontodetails']")
+    public WebElement kontodetailsText;
 
+    @FindBy(xpath = "//input[@name='account_first_name']")
+    public WebElement firstNameBox;
 
+    @FindBy(xpath = "//input[@name='account_last_name']")
+    public WebElement lastNameBox;
 
+    @FindBy(xpath = "//button[@class='woocommerce-Button button']")
+    public WebElement saveChangesBtn;
 
 
 
