@@ -44,14 +44,12 @@ public class DashboardPage extends BasePage {
 
     @FindBy (xpath = "//font[text()='Abmelden']")
     public WebElement abmeldenText;
+    @FindBy (xpath = "//a[text()='Kontodetails']")
+    public WebElement kontoDetailsButton;
 
 
     public void goBackBrowserButton() {
         Driver.getDriver().navigate().back();
-
-
-
-
 
     }
 
