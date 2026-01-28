@@ -49,12 +49,7 @@ public class DashboardPage extends BasePage {
     public void goBackBrowserButton() {
         Driver.getDriver().navigate().back();
 
-
-
-
-
     }
-
 
     @FindBy (xpath = "(//a[@href='#'])[13]")
     public WebElement languageIcon;
@@ -64,5 +59,8 @@ public class DashboardPage extends BasePage {
 
     @FindBy (xpath = "(//a[@class='nav-top-link'])[1]")
     public WebElement soortenHoningIcon;
+
+    @FindBy (xpath = "(//i[@class='icon-tiktok'])[1]")
+    public WebElement tikTokIcon;
 
 }

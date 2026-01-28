@@ -33,4 +33,26 @@ public class ZugriefZuInsta_Step_Defs {
         Assert.assertEquals(expectedUrl, actualUrl);
     }
 
+    @When("user clicks on the Tik Tok icon")
+    public void user_clicks_on_the_tik_tok_icon() {
+        dashboardPage.tikTokIcon.click();
+
+    }
+    @Then("verify that Tik Tok page is opened")
+    public void verify_that_tik_tok_page_is_opened() {
+
+        String actualTabID = Driver.getDriver().getWindowHandle();
+
+        for (String tabId : Driver.getDriver().getWindowHandles()) {
+            if (!tabId.equals(actualTabID)) {
+                Driver.getDriver().switchTo().window(tabId);
+            }
+        }
+        String expected1Url = "https://www.tiktok.com/@ziyademnaturladen/";
+        String actual1Url = Driver.getDriver().getCurrentUrl();
+
+        Assert.assertEquals(expected1Url, actual1Url);
+
+    }
+
 }
