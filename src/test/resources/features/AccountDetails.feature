@@ -1,4 +1,4 @@
-@SDF
+
   Feature: Account Details Update
 
 Scenario: Update Account Details
